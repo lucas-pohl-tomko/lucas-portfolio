@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LUCAS_PORTFOLIO_38006 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LUCAS_POHL_TOMKO }}'
           channelId: live
-          projectId: lucas-portfolio-38006
+          projectId: lucas-pohl-tomko
