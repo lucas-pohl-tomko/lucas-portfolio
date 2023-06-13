@@ -1,6 +1,6 @@
 # lucas-portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Hi, this is my portfolio/curriculum made with Vite. Bellow is the boilerplate Vite setup, enjoy :)
 
 ## Recommended IDE Setup
 
