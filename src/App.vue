@@ -7,7 +7,14 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style lang="scss">
-	html{
-		overflow-y: auto!important; 
-	}
+@font-face {
+    font-family: oswald;
+    src: url(@/assets/fonts/oswald/static/Oswald-Regular.ttf);
+}
+html{
+    overflow-y: auto !important;
+}
+body {
+    font-family: oswald!important;
+}
 </style>

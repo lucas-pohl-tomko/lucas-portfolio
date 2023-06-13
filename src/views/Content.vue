@@ -21,12 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-    font-family: oswald;
-    src: url(@/assets/fonts/oswald/Oswald-VariableFont_wght.ttf);
-}
 .content-container {
-    font-family: oswald;
     padding: 2rem;
 }
 .article-container {
