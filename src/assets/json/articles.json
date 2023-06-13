@@ -1,8 +1,11 @@
 {
     "articles": [
         {
-            "header": "Um pouco sobre mim djashd aksd hkajsh dkjhkhjdahjs dkjahs dkja ksdkkkdhashdas   hsdhasjdhakjshdkaskdkajsd ashdasdjashdk",
-            "content": "Olá, meu nome é blah blah bklah blaskfaklsdk askd aksjd kajse jqwe dasdaskdlkajsldkaj sdja sldja lskjd asd alshdl as"
+            "id":"introduction",
+            "section": "Introdução",
+            "icon": "face",
+            "header": "Um pouco sobre mim ",
+            "content": "Olá, meu nome é Lucas, sou um desenvolvedor <b>fullstack</b> que trabalha com <b>Vue.js</b> e <b>Express.js</b> a quase 2 anos :) <br> Gosto de programar em <b>Javascript</b> e <b>Typescript</b> e durante o curso de Sistemas de Informação estudei varias linguagens como: Python, Java e C. Assim como diversas tecnologias e frameworks como: Angular, Django REST framework, e Spring Boot"
         }
     ]
 }

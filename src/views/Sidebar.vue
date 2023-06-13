@@ -1,16 +1,18 @@
 <template>
     <v-navigation-drawer
         v-if="!mobile"
-        image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
-        theme="dark"
-        width="auto"
+        color="#00838F"
+        width="350"
+        elevation="20"
         permanent
     >
-        <v-container>
+        <v-container class="sidebar">
             <div class="flex-column">
                 <div class="row">
                     <div class="col-2">
-                        <v-avatar color="surface-variant" image="smirk.png"></v-avatar>
+                        <v-avatar color="surface-variant">
+                            <template #default><v-img src="https://media.licdn.com/dms/image/C4D03AQGP0TdbplUUTg/profile-displayphoto-shrink_200_200/0/1651510545716?e=1692230400&v=beta&t=4icsgA3uOUFPdyGahd8Z3kRdw4p-41LqHPfVLlJM8ho" alt="" srcset=""></v-img></template>
+                        </v-avatar>
                     </div>
                     <div class="col">
                         <h4 class="mx-2">Lucas Daniel Tomko</h4>
@@ -30,30 +32,14 @@
                 </div>
             </div>
         </v-container>
-        <v-divider></v-divider>
+        <v-divider ></v-divider>
         <v-list nav>
-            <a href="#" class="text-bg-primary text-decoration-none">
-                <v-list-item value="scholarship">
+            <a :href="`#${article.id}`" class="text-bg-primary text-decoration-none" v-for="(article, index) in articles.articles" :key="index">
+                <v-list-item :value="article.id">
                     <template #prepend>
-                        <box-icon class="mx-4" type="solid" color="white" name="face"></box-icon>
+                        <box-icon class="mx-4" type="solid" color="white" :name="article.icon"></box-icon>
                     </template>
-                    <template #title> <h2 class="fs-4">Faculdade</h2> </template>
-                </v-list-item>
-            </a>
-            <a href="#" class="text-bg-primary text-decoration-none">
-                <v-list-item value="skills">
-                    <template #prepend>
-                        <box-icon class="mx-4" type="solid" color="white" name="wrench"></box-icon>
-                    </template>
-                    <template #title> <h2 class="fs-4">Habilidades</h2> </template>
-                </v-list-item>
-            </a>
-            <a href="#" class="text-bg-primary text-decoration-none">
-                <v-list-item value="projects">
-                    <template #prepend>
-                        <box-icon class="mx-4" type="solid" color="white" name="rocket"></box-icon>
-                    </template>
-                    <template #title> <h2 class="fs-4">Projeto</h2></template>
+                    <template #title> <h2 class="fs-4">{{article.section}}</h2> </template>
                 </v-list-item>
             </a>
         </v-list>
@@ -61,11 +47,14 @@
 </template>
 
 <script lang="ts">
+// @ts-ignore
+import articles from '../assets/json/articles.json'
 import { useDisplay } from 'vuetify'
+
 export default {
     setup() {
         const { mobile } = useDisplay()
-        return { mobile }
+        return { mobile, articles }
     },
     data: () => ({
         drawer: false
@@ -78,6 +67,6 @@ export default {
     color: white;
 }
 .sidebar{
-    display: block!important;
+    color: white;
 }
 </style>

@@ -53,7 +53,7 @@
             </v-list>
         </v-navigation-drawer>
         <sidebar />
-        <v-main style="height: 100vh">
+        <v-main style="height: 100vh; width: fill-width;">
             <router-view></router-view>
         </v-main>
     </v-layout>
