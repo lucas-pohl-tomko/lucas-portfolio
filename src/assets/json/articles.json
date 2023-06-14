@@ -5,7 +5,21 @@
             "section": "Introdução",
             "icon": "face",
             "header": "Um pouco sobre mim ",
-            "content": "Olá, meu nome é Lucas, sou um desenvolvedor <b>fullstack</b> que trabalha com <b>Vue.js</b> e <b>Express.js</b> a quase 2 anos :) <br> Gosto de programar em <b>Javascript</b> e <b>Typescript</b> e durante o curso de Sistemas de Informação estudei várias linguagens como: Python, Java e C. Assim como diversas tecnologias e frameworks como: Angular, Django REST framework, e Spring Boot"
+            "content": "Olá, meu nome é Lucas, sou desenvolvedor <b>fullstack</b> que trabalha com <b>Vue.js</b> e <b>Express.js</b> a quase 2 anos :) <br> Gosto de programar em <b>Javascript</b> e <b>Typescript</b> e durante o curso de Sistemas de Informação estudei várias linguagens como: Python, Java e C. Assim como diversas tecnologias e frameworks como: Angular, Django REST framework, e Spring Boot."
+        },
+        {
+            "id":"skills",
+            "section": "Habilidades",
+            "icon": "book-reader",
+            "header": "Habilidades",
+            "content": "Eu construí muitas das minhas habilidades no ambiente profissional e ao praticar programação como hobby. Algumas dessas habilidades são: <br/> <div class=skills-list>Desenvolvimento com <b>Vue.js 2</b>, <b>Vue.js 3</b> <br/> Desenvolvimento de API's com <b>Express.js</b> e conexão com bancos de dados com <b>Sequelize</b><br/> Modelagem de bancos de dados relacionais (<b>MSSQL</b>, <b>PostgreSQL</b>)<br/> Criação de <b>aplicações on-premises</b> utilizando <b>IIS</b> e <b>Active Directory</b><br/>Criação de <b>aplicação cloud</b> utilizando <b>Azure Web Service</b> e Modelagem de banco de dados não relacional utilizando <b>Azure CosmosDB</b></div>"
+        },
+        {
+            "id":"professional-experiences",
+            "section": "Experiências profissionais",
+            "icon": "book-reader",
+            "header": "Experiências profissionais",
+            "content": "Ao trabalhar como desenvolverdor fullstack eu tive diversas experiências que consegui aproveitar para ter mais ferramentas à minha disposição.<br/> Algumas delas foram: <br/><div class=skills-list> Desenvolvimento de <b>novas funcionalidades</b>, manutenção e <b>correção de bugs</b> em um sistema de governança e administração de identidade. front-end (Vue.js) e back-end (Node.js, Express.js, MSSQL). <br/>Assistência na <b>Criação</b>, <b>Planejamento</b> e implantação de um <b>novo sistema</b>, que é um modulo para revisão de acessos do outro sistema. front-end (Vue.js) e back-end (Node.js, Express.js, MSSQL).<br/> Vivência em <b>modelagem</b> de bancos de dados relacionais <b>MSSQL</b>, incluindo o planejamento, definição de relações e criação utilizando o Sequelize. <br/> <b>Criação</b>, <b>planejamento</b>, e <b>controle criativo</b>, de um novo software, trabalhando no front-end e back-end, com <b>Vue3</b>, <b>Express.js</b>, <b>Azure Web Service</b>, <b>Azure CosmosDB</b>(NoSQL)</div>"
         }
     ]
 }

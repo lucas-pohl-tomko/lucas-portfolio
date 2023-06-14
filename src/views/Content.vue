@@ -26,4 +26,11 @@ export default {
 }
 .article-container {
 }
+.skills-list{
+    background-color: #12b2c036;
+    padding: 1rem;
+    border-radius: 20px;
+    list-style: none;
+    width: fit-content;
+}
 </style>

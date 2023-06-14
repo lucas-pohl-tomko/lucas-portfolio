@@ -3,6 +3,7 @@
         v-if="mobile"
         color="#00838F"
         theme="dark"
+        elevation="20"
         prominent
     >
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
@@ -10,21 +11,22 @@
                 <box-icon size="md" color="white" name="menu"></box-icon>
             </template>
         </v-app-bar-nav-icon>
-        <v-toolbar-title>Lucas Daniel Pohl Tomko</v-toolbar-title>
+        <v-toolbar-title>{{ selectedArticle.length ? selectedArticle : `Lucas Daniel Pohl Tomko` }}</v-toolbar-title>
         <v-spacer></v-spacer>
     </v-app-bar>
     <v-navigation-drawer v-if="mobile" v-model="drawer" color="#00838f" theme="dark" location="bottom" temporary>
-        <v-list nav class="d-flex justify-content-center">
+        <v-list nav class="">
             <a
                 :href="`#${article.id}`"
-                class="linkedin-link text-decoration-none d-flex justify-content-center"
+                class="linkedin-link text-decoration-none d-flex align-self-start"
+                @click="selectArticle(article.section)"
                 v-for="(article, index) in articles.articles"
                 :key="index"
             >
                 <v-list-item :value="article.id">
                     <template #prepend>
                         <box-icon
-                            class="mx-4"
+                            class="mx-4 my-3"
                             type="solid"
                             color="white"
                             :name="article.icon"
@@ -37,7 +39,7 @@
             </a>
         </v-list>
     </v-navigation-drawer>
-    <v-navigation-drawer v-if="!mobile" color="#00838F" width="350" elevation="20" permanent>
+    <v-navigation-drawer v-if="!mobile" color="#00838F" width="350" elevation="24" permanent>
         <v-container class="sidebar">
             <div class="flex-column">
                 <div class="row">
@@ -59,7 +61,6 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col flex-column">
-                        <h6 class="mx-2">(47) 9 9762-9558</h6>
                         <h6 class="mx-2">
                             Linkedin:
                             <a class="linkedin-link" href="https://www.linkedin.com/in/lucas-daniel-pohl-tomko-bb50b71a3/" target=”_blank”
@@ -76,7 +77,6 @@
                 </div>
             </div>
         </v-container>
-        <v-divider></v-divider>
         <v-list nav>
             <a
                 :href="`#${article.id}`"
@@ -84,7 +84,7 @@
                 v-for="(article, index) in articles.articles"
                 :key="index"
             >
-                <v-list-item :value="article.id">
+                <v-list-item :value="article.id" class="my-3">
                     <template #prepend>
                         <box-icon
                             class="mx-4"
@@ -110,11 +110,22 @@ import { useDisplay } from 'vuetify'
 export default {
     setup() {
         const { mobile } = useDisplay()
-        return { mobile, articles }
+        let selectedArticle = ``
+        return { mobile, articles, selectedArticle }
     },
     data: () => ({
-        drawer: false
-    })
+        drawer: false,
+    }),
+    methods: {
+        selectArticle(article: string){
+            this.selectedArticle = article
+        }
+    },
+    watch:{
+        mobile(){
+            this.selectedArticle = ``
+        }
+    }
 }
 </script>
 
@@ -124,5 +135,6 @@ export default {
 }
 .sidebar {
     color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
 }
 </style>
