@@ -32,5 +32,10 @@ export default {
     border-radius: 20px;
     list-style: none;
     width: fit-content;
+    
+}
+li{
+    list-style:disc;
+    margin: -.5rem;
 }
 </style>

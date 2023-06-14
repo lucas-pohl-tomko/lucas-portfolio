@@ -13,6 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 html {
     overflow-y: auto !important;
+    font-size: 15px!important;
 }
 body {
     font-family: oswald !important;

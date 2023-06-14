@@ -5,13 +5,14 @@
         theme="dark"
         elevation="20"
         prominent
+        class=""
     >
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
             <template #default>
                 <box-icon size="md" color="white" name="menu"></box-icon>
             </template>
         </v-app-bar-nav-icon>
-        <v-toolbar-title>{{ selectedArticle.length ? selectedArticle : `Lucas Daniel Pohl Tomko` }}</v-toolbar-title>
+        <div class="fs-3 p-1">{{ selectedArticle.length ? selectedArticle : `Lucas Daniel Pohl Tomko` }}</div>
         <v-spacer></v-spacer>
     </v-app-bar>
     <v-navigation-drawer v-if="mobile" v-model="drawer" color="#00838f" theme="dark" location="bottom" temporary>
@@ -136,5 +137,8 @@ export default {
 .sidebar {
     color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+.toolbar-title{
+    width: 20rem;
 }
 </style>
