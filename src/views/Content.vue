@@ -18,7 +18,7 @@
             </h1>
             <p v-html="project.description" class="fs-4 my-5">
             </p>
-            <a href="project.link"><h4> {{project.project}}</h4></a>
+            <a target="_blank" :href="project.link"><h4> {{project.project}}</h4></a>
             <v-img class="" :src="project.pictures[0]" alt="" srcset=""></v-img>
         </div>
     </div>

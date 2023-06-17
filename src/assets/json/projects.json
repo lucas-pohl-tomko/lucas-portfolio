@@ -2,22 +2,22 @@
     {
         "project": "gif-randomizer",
         "name": "Aleatorizador de GIFs",
-        "description": "O aleatorizador de GIFs foi algo que eu procurei na epoca e não encontrei, um site que exibisse GIFs aleatórios que eu pudesse deixar em fullscreen, então resolvi fazer! <br> Ele foi algo que eu precisava no momento, então eu fiz de uma maneira bem peculiar, é uma única página html que carrega uma instancia de Vue, carrega uma lista de GIFs aleatorios de endpoints de duas APIs de gifs populares e cria uma queue de GIFs, atualizei ele para combinar com o tema de Lain onde a interface lembra a do jogo de PS1. <br> <div class=tech>Tecnologias: Vue.js, Tailwind, HTML, CSS, Firebase Hosting</div>",
-        "link":"gif-randomizer.web.app",
+        "description": "O aleatorizador de GIFs foi algo que procurei na época e não encontrei, um site que exibisse GIFs aleatórios que eu pudesse deixar em fullscreen, então resolvi fazer! <br> O projeto foi algo que eu precisava no momento, por conta disso é feito de uma maneira peculiar, ele é uma única página HTML que carrega uma instância de Vue, carrega uma lista de GIFs aleatórios de endpoints de duas APIs de GIFs populares e cria uma queue de GIFs, atualizei ele para combinar com o tema de Serial Experiments Lain onde a interface lembra a do jogo de PS1. <br> <div class=tech>Tecnologias: Vue.js, Tailwind, HTML, CSS, Firebase Hosting</div>",
+        "link":"https://gif-randomizer.web.app",
         "pictures":["src/assets/pictures/Lain-Gif.png"]
     },
     {
         "project": "amazing-vue3-quickstart-template",
         "name": "Template de projetos Vue3",
-        "description": "Esse projeto eu uso para iniciar outros projetos Vue3, tem as dependencias que eu gosto, e as minhas preferencias de estilo de organização de componentes, rotas e pastas",
-        "link":"",
+        "description": "Esse projeto eu uso para iniciar outros projetos Vue3, tem as dependências que eu gosto, e as minhas preferências de estilo de organização de componentes, rotas e pastas<br> <div class=tech>Tecnologias: Vue.js 3, Tailwind, <b>Vuetify</b></div>",
+        "link":"https://github.com/lucas-pohl-tomko/amazing-vue3-quickstart-template",
         "pictures":["../pictures/quickstart.jpeg"]
     },
     {
         "project": "express-template",
         "name": "Template de projetos Express",
-        "description": "Esse projeto eu uso para iniciar outros projetos Express, ele utiliza o modelo de minha preferencia MVCS - model, view, controller, service",
-        "link":"",
+        "description": "Esse projeto eu uso para iniciar outros projetos Express, ele utiliza o modelo de minha preferência, MVCS (model, view, controller, service)<br> <div class=tech>Tecnologias: Express.js, Sequelize, JWT Tokens</div>",
+        "link":"https://github.com/lucas-pohl-tomko/express-api-template-rep",
         "pictures":["../pictures/apitemplate.jpeg"]
     }
 ]
