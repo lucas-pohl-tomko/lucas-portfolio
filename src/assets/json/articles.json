@@ -12,7 +12,7 @@
             "section": "Habilidades",
             "icon": "book-reader",
             "header": "Habilidades",
-            "content": "Eu construí muitas das minhas habilidades no ambiente profissional e ao praticar programação como hobby. Algumas dessas habilidades são: <br/> <div class=skills-list><ul> <li>Desenvolvimento com <b>Vue.js 2</b>, <b>Vue.js 3</b> </li><br/> <li>Desenvolvimento de API's com <b>Express.js</b> e conexão com bancos de dados com <b>Sequelize</b></li><br/> <li>Modelagem de bancos de dados relacionais (<b>MSSQL</b>, <b>PostgreSQL</b>)</li><br/><li> Criação de <b>aplicações on-premises</b> utilizando <b>IIS</b> e <b>Active Directory</b></li><br/><li>Criação de <b>aplicação cloud</b> utilizando <b>Azure Web Service</b> e Modelagem de banco de dados não relacional utilizando <b>Azure CosmosDB</b></li></ul></div>"
+            "content": "Eu construí muitas das minhas habilidades no ambiente profissional e ao praticar programação nas horas vagas. Algumas dessas habilidades são: <br/> <div class=skills-list><ul> <li>Desenvolvimento com <b>Vue.js 2</b>, <b>Vue.js 3</b> </li><br/> <li>Desenvolvimento de API's com <b>Express.js</b> e conexão com bancos de dados com <b>Sequelize</b></li><br/> <li>Modelagem de bancos de dados relacionais (<b>MSSQL</b>, <b>PostgreSQL</b>)</li><br/><li> Criação de <b>aplicações on-premises</b> utilizando <b>IIS</b> e <b>Active Directory</b></li><br/><li>Criação de <b>aplicação cloud</b> utilizando <b>Azure Web Service</b> e Modelagem de banco de dados não relacional utilizando <b>Azure CosmosDB</b></li></ul></div>"
         },
         {
             "id":"professional-experiences",
