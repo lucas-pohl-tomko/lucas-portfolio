@@ -99,6 +99,20 @@
                     </template>
                 </v-list-item>
             </a>
+            <v-divider></v-divider>
+            
+            <a
+                :href="`#${project.project}`"
+                class="text-bg-primary text-decoration-none"
+                v-for="(project, index) in projects"
+                :key="index"
+            >
+                <v-list-item :value="project.project" class="my-3">
+                    <template #title>
+                        <h2 class="fs-4">{{ project.name }}</h2>
+                    </template>
+                </v-list-item>
+            </a>
         </v-list>
     </v-navigation-drawer>
 </template>
@@ -106,13 +120,14 @@
 <script lang="ts">
 // @ts-ignore
 import articles from '../assets/json/articles.json'
+import projects from '../assets/json/projects.json'
 import { useDisplay } from 'vuetify'
 
 export default {
     setup() {
         const { mobile } = useDisplay()
         let selectedArticle = ``
-        return { mobile, articles, selectedArticle }
+        return { mobile, articles, selectedArticle, projects }
     },
     data: () => ({
         drawer: false,

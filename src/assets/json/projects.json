@@ -1,0 +1,23 @@
+[
+    {
+        "project": "gif-randomizer",
+        "name": "Aleatorizador de GIFs",
+        "description": "O aleatorizador de GIFs foi algo que eu procurei na epoca e não encontrei, um site que exibisse GIFs aleatórios que eu pudesse deixar em fullscreen, então resolvi fazer! <br> Ele foi algo que eu precisava no momento, então eu fiz de uma maneira bem peculiar, é uma única página html que carrega uma instancia de Vue, carrega uma lista de GIFs aleatorios de endpoints de duas APIs de gifs populares e cria uma queue de GIFs, atualizei ele para combinar com o tema de Lain onde a interface lembra a do jogo de PS1. <br> <div class=tech>Tecnologias: Vue.js, Tailwind, HTML, CSS, Firebase Hosting</div>",
+        "link":"gif-randomizer.web.app",
+        "pictures":["src/assets/pictures/Lain-Gif.png"]
+    },
+    {
+        "project": "amazing-vue3-quickstart-template",
+        "name": "Template de projetos Vue3",
+        "description": "Esse projeto eu uso para iniciar outros projetos Vue3, tem as dependencias que eu gosto, e as minhas preferencias de estilo de organização de componentes, rotas e pastas",
+        "link":"",
+        "pictures":["../pictures/quickstart.jpeg"]
+    },
+    {
+        "project": "express-template",
+        "name": "Template de projetos Express",
+        "description": "Esse projeto eu uso para iniciar outros projetos Express, ele utiliza o modelo de minha preferencia MVCS - model, view, controller, service",
+        "link":"",
+        "pictures":["../pictures/apitemplate.jpeg"]
+    }
+]

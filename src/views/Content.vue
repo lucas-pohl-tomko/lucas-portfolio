@@ -8,14 +8,29 @@
             </p>
         </div>
     </div>
+    
+    <div class="content-container">
+        <h1>Projetos</h1>
+        <v-divider></v-divider>
+        <div class="article-container" v-for="(project, index) in projects" :key="index" :id="project.project">
+            <h1>
+                {{ project.name }}
+            </h1>
+            <p v-html="project.description" class="fs-4 my-5">
+            </p>
+            <a href="project.link"><h4> {{project.project}}</h4></a>
+            <v-img class="" :src="project.pictures[0]" alt="" srcset=""></v-img>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
 // @ts-ignore
 import articles from '../assets/json/articles'
+import projects from '../assets/json/projects.json'
 export default {
     data: () => {
-        return { articles: articles }
+        return { articles: articles,projects: projects }
     }
 }
 </script>
@@ -24,8 +39,13 @@ export default {
 .content-container {
     padding: 2rem;
 }
-.article-container {
+.article-container:first-child {
+    margin-top: 0rem;
 }
+.article-container {
+    margin-top: 2rem;
+}
+
 .skills-list{
     background-color: #12b2c036;
     padding: 1.5rem;
@@ -38,5 +58,9 @@ export default {
 li{
     list-style:disc;
     margin: -.5rem;
+}
+.tech{
+    font-size: 1.3rem;
+    color: rgb(52, 66, 66);
 }
 </style>
