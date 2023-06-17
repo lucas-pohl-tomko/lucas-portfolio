@@ -28,11 +28,12 @@ export default {
 }
 .skills-list{
     background-color: #12b2c036;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    margin-top: .5rem;
     border-radius: 20px;
     list-style: none;
     width: fit-content;
-    
 }
 li{
     list-style:disc;
