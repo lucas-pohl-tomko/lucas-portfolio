@@ -2,7 +2,7 @@
     {
         "project": "gif-randomizer",
         "name": "Aleatorizador de GIFs",
-        "description": "O aleatorizador de GIFs foi algo que procurei na época e não encontrei, um site que exibisse GIFs aleatórios que eu pudesse deixar em fullscreen, então resolvi fazer! <br> O projeto foi algo que eu precisava no momento, por conta disso é feito de uma maneira peculiar, ele é uma única página HTML que carrega uma instância de Vue, carrega uma lista de GIFs aleatórios de endpoints de duas APIs de GIFs populares e cria uma queue de GIFs, atualizei ele para combinar com o tema de Serial Experiments Lain onde a interface lembra a do jogo de PS1. <br> <div class=tech>Tecnologias: Vue.js, Tailwind, HTML, CSS, Firebase Hosting</div>",
+        "description": "O aleatorizador de GIFs foi algo que procurei na época e não encontrei. Precisava de um site que exibisse GIFs aleatórios que eu pudesse deixar em fullscreen, então decidi desenvolve-lo! <br> O projeto é uma única página HTML que carrega uma instância de Vue, funções que buscam GIFs aleatórios de endpoints de duas APIs populares (Tenor e Giphy) e uma fila de exibição desses GIFs. Atualizei a interface para combinar com o tema de Serial Experiments Lain onde o menu lembra o do jogo de PlayStation 1. <br> <div class=tech>Tecnologias: Vue.js, Tailwind, HTML, CSS, Firebase Hosting</div>",
         "link":"https://gif-randomizer.web.app",
         "pictures":["src/assets/pictures/Lain-Gif.png"]
     },
