@@ -31,7 +31,7 @@
             >
             <v-carousel v-if="project.pictures.length" hide-delimiter-background>
                 <v-carousel-item>
-                    <div class="smartphone">
+                    <div class="smartphone shadow-lg">
                         <div class="content">
                             <iframe
                                 class="frame"
@@ -105,6 +105,7 @@ li {
     border-top-width: 60px;
     border-bottom-width: 60px;
     border-radius: 36px;
+    box-shadow: 10px 10px 20px !important;
 }
 
 /* The horizontal line on the top of the device */
@@ -141,7 +142,6 @@ li {
     height: 320px;
     background: rgb(255, 255, 255);
 }
-
 // .wrap {
 //     width: 600px;
 //     height: 390px;
