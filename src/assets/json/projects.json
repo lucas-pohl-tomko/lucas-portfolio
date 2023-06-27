@@ -7,17 +7,24 @@
         "pictures":["src/assets/pictures/Lain-Gif.png"]
     },
     {
+        "project": "vi-chatting",
+        "name": "Aplicativo ViChatting",
+        "description": "<div class=tech>(projeto em desenvolvimento)</div> Esse é o protótipo de um aplicativo de Chat com assistentes virtuais que utilizam inteligência artificial para responder as mensagens dos usuários. Esse projeto utiliza Firebase para hosting, Firestore para a persistência dos dados e back-end e consome a API da OpenAI.<br> <div class=tech>Tecnologias: Vue.js 3, Tailwind, HTML, CSS, Firebase Hosting, Firestore, Firebase Auth</div>",
+        "link":"https://vi-chatting.web.app",
+        "pictures":[""]
+    },
+    {
         "project": "amazing-vue3-quickstart-template",
         "name": "Template de projetos Vue3",
         "description": "Esse projeto eu uso para iniciar outros projetos Vue3, tem as dependências que eu gosto, e as minhas preferências de estilo de organização de componentes, rotas e pastas<br> <div class=tech>Tecnologias: Vue.js 3, Tailwind, <b>Vuetify</b></div>",
         "link":"https://github.com/lucas-pohl-tomko/amazing-vue3-quickstart-template",
-        "pictures":["../pictures/quickstart.jpeg"]
+        "pictures": []
     },
     {
         "project": "express-template",
         "name": "Template de projetos Express",
         "description": "Esse projeto eu uso para iniciar outros projetos Express, ele utiliza o modelo de minha preferência, MVCS (model, view, controller, service)<br> <div class=tech>Tecnologias: Express.js, Sequelize, JWT Tokens</div>",
         "link":"https://github.com/lucas-pohl-tomko/express-api-template-rep",
-        "pictures":["../pictures/apitemplate.jpeg"]
+        "pictures": []
     }
 ]

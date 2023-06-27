@@ -6,18 +6,19 @@ import router from './router'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
-
+import '@mdi/font/css/materialdesignicons.css'
 // Vuetify
 import 'vuetify/styles'
 import 'boxicons'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
 
 const vuetify = createVuetify({
   components,
   directives,
-  ssr:true
+  ssr:true,
 })
 
 const app = createApp(App)
