@@ -42,7 +42,7 @@
                 ></v-carousel-item>
 
                 <v-carousel-item>
-                    <iframe class="big-frame" :src="project.link" />
+                    <iframe :class="mobile ? 'mobile-frame' : 'big-frame'" :src="project.link" />
                 </v-carousel-item>
             </v-carousel>
         </div>
@@ -53,7 +53,13 @@
 // @ts-ignore
 import articles from '../assets/json/articles'
 import projects from '../assets/json/projects.json'
+import { useDisplay } from 'vuetify'
+
 export default {
+    setup() {
+        const { mobile } = useDisplay()
+        return { mobile }
+    },
     data: () => {
         return { articles: articles, projects: projects }
     }
@@ -174,5 +180,10 @@ $scale: .64;
     -o-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
+}
+.mobile-frame{
+    width:100%;
+    border:none;
+    height:100%
 }
 </style>
