@@ -30,11 +30,11 @@
                 ><h4>{{ project.project }}</h4></a
             >
             <v-chip-group v-if="project.pictures.length" class="float-end">
-                <v-chip><box-icon name="minus" @click=subtractHeight(project.project)></box-icon></v-chip>
+                <v-chip @click=subtractHeight(project.project)><box-icon name="minus"></box-icon></v-chip>
 
                 <v-chip disabled>Height Picker! {{ heightPicker[project.project]?.height || 700 }}</v-chip>
 
-                <v-chip><box-icon name="plus" @click=addHeight(project.project)></box-icon></v-chip>
+                <v-chip @click=addHeight(project.project)><box-icon name="plus" ></box-icon></v-chip>
             </v-chip-group>
             <v-carousel
                 v-if="project.pictures.length"
