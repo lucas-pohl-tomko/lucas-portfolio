@@ -21,7 +21,7 @@
                 :href="`#${article.id}`"
                 class="linkedin-link text-decoration-none d-flex align-self-start"
                 @click="selectArticle(article.section)"
-                v-for="(article, index) in articles.articles"
+                v-for="(article, index) in articles"
                 :key="index"
             >
                 <v-list-item :value="article.id">
@@ -82,7 +82,7 @@
             <a
                 :href="`#${article.id}`"
                 class="text-bg-primary text-decoration-none"
-                v-for="(article, index) in articles.articles"
+                v-for="(article, index) in articles"
                 :key="index"
             >
                 <v-list-item :value="article.id" class="my-3">
