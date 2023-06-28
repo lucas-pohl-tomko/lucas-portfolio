@@ -2,7 +2,7 @@
     <div class="content-container">
         <div
             class="article-container"
-            v-for="(article, index) in articles.articles"
+            v-for="(article, index) in articlesContent"
             :key="index"
             :id="article.id"
         >
@@ -18,7 +18,7 @@
         <v-divider></v-divider>
         <div
             class="article-container"
-            v-for="(project, index) in projects"
+            v-for="(project, index) in projectsContent"
             :key="index"
             :id="project.project"
         >
@@ -29,15 +29,22 @@
             <a target="_blank" :href="project.link"
                 ><h4>{{ project.project }}</h4></a
             >
-            <v-carousel v-if="project.pictures.length" hide-delimiter-background>
+            <v-chip-group v-if="project.pictures.length" class="float-end">
+                <v-chip><box-icon name="minus" @click=subtractHeight(project.project)></box-icon></v-chip>
+
+                <v-chip disabled>Height Picker! {{ heightPicker[project.project]?.height || 700 }}</v-chip>
+
+                <v-chip><box-icon name="plus" @click=addHeight(project.project)></box-icon></v-chip>
+            </v-chip-group>
+            <v-carousel
+                v-if="project.pictures.length"
+                :height="heightPicker[project.project]?.height || 700"
+                hide-delimiter-background
+            >
                 <v-carousel-item>
                     <div class="smartphone shadow-lg">
                         <div class="content">
-                            <iframe
-                                class="frame"
-                                :src="project.link"
-                                style=""
-                            />
+                            <iframe class="frame" :src="project.link" style="" />
                         </div></div
                 ></v-carousel-item>
 
@@ -49,20 +56,31 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 // @ts-ignore
-import articles from '../assets/json/articles'
+import { ref } from 'vue'
+import articles from '../assets/json/articles.json'
 import projects from '../assets/json/projects.json'
 import { useDisplay } from 'vuetify'
+const { mobile } = useDisplay()
 
-export default {
-    setup() {
-        const { mobile } = useDisplay()
-        return { mobile }
-    },
-    data: () => {
-        return { articles: articles, projects: projects }
+const articlesContent: any = ref(articles)
+const projectsContent: any = ref(projects)
+const heightPicker:any = ref({})
+
+function subtractHeight(project: string){
+    if(!heightPicker.value[project]) {
+        heightPicker.value[project] = {}
+        heightPicker.value[project].height = 700
     }
+    heightPicker.value[project].height -= 100
+}
+function addHeight(project: string){
+    if(!heightPicker.value[project]) {
+        heightPicker.value[project] = {}
+        heightPicker.value[project].height = 700
+    }
+    heightPicker.value[project].height += 100
 }
 </script>
 
@@ -153,13 +171,12 @@ li {
 //     height: 640px;
 //     border: 1px solid black;
 // }
-$scale: .64;
-.frame
-{
+$scale: 0.64;
+.frame {
     width: 600px;
     height: 800px;
     border: 0;
-    transform: scale(0.38,.4);
+    transform: scale(0.38, 0.4);
 
     -ms-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
@@ -167,23 +184,15 @@ $scale: .64;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
 }
-.big-frame
-{
-    width: 1920px;
-    height: 1080px;
+.big-frame {
+    width: 100%;
+    height: 100%;
+
     border: 0;
-
-    transform: scale(0.48,.46);
-
-    -ms-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
 }
-.mobile-frame{
-    width:100%;
-    border:none;
-    height:100%
+.mobile-frame {
+    width: 100%;
+    border: none;
+    height: 100%;
 }
 </style>
